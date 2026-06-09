@@ -1,11 +1,14 @@
+import "@/app/ui/global.css"
+import { inter } from "@/app/ui/invoices/fonts"
+
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode;//react组件
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
